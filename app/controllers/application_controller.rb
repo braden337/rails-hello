@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hello
-    render json: '{"Rob Gousseau":"(204) 261-3769"}'
+    render json: '{"Ryan Villopoto":2}'
   end
 
 end
