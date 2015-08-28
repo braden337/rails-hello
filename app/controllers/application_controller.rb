@@ -4,6 +4,14 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hello
+    render text: '¡Hola, mundo!'
+  end
+
+  def goodbye
+    render text: 'Goodbye, world!'
+  end
+
+  def rv
     render json: '{"Ryan Villopoto":2}'
   end
 
